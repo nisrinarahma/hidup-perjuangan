@@ -1,0 +1,8 @@
+# Rumus THI
+df['Nilai_THI'] = (0.8 * df['Suhu_C']) + ((df['Kelembapan_%'] * df['Suhu_C']) / 500)
+
+# Pembulatan
+df['Nilai_THI'] = np.round(df['Nilai_THI'], 2)
+
+# Menampilkan data suhu, kelembapan, dan hasil perhitungan THI
+df[['Titik_Pengamatan', 'Suhu_C', 'Kelembapan_%', 'Nilai_THI']]
