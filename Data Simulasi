@@ -1,0 +1,14 @@
+data = {
+    'Titik_Pengamatan': ['Titik 1 (Tepi Jalan)', 'Titik 2 (Dekat Air)', 'Titik 3 (Pusat Taman)', 'Titik 4 (Bawah Pohon)', 'Titik 5 (Area Terbuka)'],
+    'Suhu_C': [22.5, 21.5, 30.5, 44.0, 31.0],
+    'Kelembapan_%': [90, 57, 60, 90, 70],
+    'pH_Tanah': [5.0, 5.8, 5.5, 5.7, 5.2],
+    'Kebisingan_dB': [95, 65, 60, 50, 62],
+    'Suhu_BMKG_C': [31.0, 31.0, 31.0, 31.0, 31.0] # Data stasiun terdekat pada jam yang sama
+}
+
+# Mengubah data menjadi Pandas DataFrame
+df = pd.DataFrame(data)
+
+# Menampilkan 5 baris pertama data
+df.head()
